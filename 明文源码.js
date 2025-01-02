@@ -30,7 +30,7 @@ let addressesnotls = [];
 let addressesnotlsapi = [];
 let addressescsv = [];
 let DLS = 8;
-let remarkIndex = 1;//CSV备注所在列偏移量
+let remarkIndex = 1;
 let FileName = atob('ZWRnZXR1bm5lbA==');
 let BotToken;
 let ChatID;
@@ -63,7 +63,7 @@ export default {
 			}
 
 			if (!userID) {
-				return new Response('请设置你的UUID变量，或尝试重试部署，检查变量是否生效？', {
+				return new Response('尝试重试部署，检查变量是否生效？', {
 					status: 404,
 					headers: {
 						"Content-Type": "text/plain;charset=utf-8",
